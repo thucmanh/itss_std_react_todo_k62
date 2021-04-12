@@ -56,7 +56,7 @@ function Todo() {
       <div className="panel-heading">
         ITSS ToDoアプリ
       </div>
-      <Input onAdd={handleAdd} />
+      <Input addItem={handleAdd} />
       <Filter
         onChange={handleFilterChange}
         value={filter}
@@ -65,7 +65,7 @@ function Todo() {
           <TodoItem 
             key={item.key}
             item={item}
-            onCheck ={handleCheck}
+            checkDone ={handleCheck}
           />
       ))}
       <div className="panel-block">

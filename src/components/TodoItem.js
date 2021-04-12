@@ -4,9 +4,9 @@
 　・チェックボックスにチェックが入っているか管理する
 　・チェックボックスにチェックが入っているかアイテムをグレーアウトする
 */
-function TodoItem( {item, onCheck} ) {
+function TodoItem( {item, checkDone} ) {
   const handleChange = () => {
-    onCheck(item);
+    checkDone(item);
   }
   return (
     <label className="panel-block">
