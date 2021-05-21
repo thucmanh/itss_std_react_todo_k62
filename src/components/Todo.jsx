@@ -1,3 +1,5 @@
+/* eslint-disable array-callback-return */
+/* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
 
 /* 
@@ -52,8 +54,10 @@ function Todo() {
   const handleFilterChange = value => setFilter(value);
 
   return (
-    <div className="panel">
+    <div className="panel is-danger">
       <div className="panel-heading">
+        <i class="fas fa-calendar-check"></i> 
+        <span> </span>
         ITSS ToDoアプリ
       </div>
       <Input addItem={handleAdd} />
